@@ -48,7 +48,7 @@ y_train = y_train.ravel()
 y_test = y_test.ravel()
 
 # Initialize the Gradient Boosting Regressor model
-model = GradientBoostingRegressor(n_estimators=100, learning_rate=0.1, max_depth=3)
+model = GradientBoostingRegressor(n_estimators=1000, learning_rate=0.1, max_depth=3)
 
 # Fit the model to the training data
 model.fit(X_train, y_train)

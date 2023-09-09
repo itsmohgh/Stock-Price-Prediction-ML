@@ -28,8 +28,7 @@ scaler = MinMaxScaler()
 scaled_data = scaler.fit_transform(data)
 
 # Set the window size for sequences (you can adjust this as needed)
-window_size = 10
-
+window_size = 12
 # Create features and target variable for the model
 X, y = [], []
 for i in range(len(scaled_data) - window_size):
